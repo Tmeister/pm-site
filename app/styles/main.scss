@@ -5,36 +5,40 @@
 @import 'bower_components/bulma/bulma';
 @import '_responsive';
 @import '_spacing';
+@import '_what-is-peermotion';
+@import '_home-hero';
 
-body{
-    max-width: 1680px;
-    margin: 0 auto;
+body {
+  max-width: 1440px;
+  margin: 0 auto;
 }
-.is-size-top-nav{
-    font-size: 0.85rem;
+
+.is-size-top-nav {
+  font-size: 0.85rem;
 }
-.top-nav{
-    box-shadow: 0 2px 10px $orange;
-    z-index: 2;
-    .navbar{
-        min-height: 2.5rem;
-        &.is-transparent {
-            background-color: transparent !important;
-        }
-        .navbar-item{
-            padding-right: 3.5rem;
-            &:last-child{
-                padding-right: 0;
-            }
-        }
+
+.top-nav {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, .25);
+  z-index: 2;
+  .navbar {
+    min-height: 2.5rem;
+    &.is-transparent {
+      background-color: transparent !important;
     }
+    .navbar-item {
+      padding-right: 3.5rem;
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+  }
 }
 
-.inner-nav{
-    padding: 2rem 0;
-    z-index: 1 !important;
+.inner-nav {
+  padding: 2rem 0;
+  z-index: 1 !important;
 }
 
-.home-hero{
-    z-index: 1;
+.is-size-3-5{
+  font-size: 1.75rem;
 }
