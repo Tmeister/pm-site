@@ -6,7 +6,6 @@
 @import '_responsive';
 @import '_spacing';
 @import '_what-is-peermotion';
-@import '_home-hero';
 
 body {
   max-width: 1440px;
@@ -39,6 +38,24 @@ body {
   z-index: 1 !important;
 }
 
-.is-size-3-5{
-  font-size: 1.75rem;
+.is-size-3-5 {
+  font-size: 1.3rem !important;
+}
+
+.is-full-width {
+  img {
+    width: 75% !important;
+    height: auto;
+  }
+}
+
+.separator{
+  background: url(../images/separator@2x.png) no-repeat center center;
+  background-size: cover;
+  height: 185px;
+}
+
+.cta{
+  background: url(../images/cta-bg@2x.png) no-repeat center center;
+  background-size: cover;
 }
