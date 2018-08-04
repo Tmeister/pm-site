@@ -1,0 +1,35 @@
+$sizeUnit: rem
+$marginKey: "m"
+$paddingKey: "p"
+$separator: "-"
+$sizes: ("none", 0), ("auto", auto), ("xxs", 0.125), ("xs", 0.25), ("sm", 0.5), ("md", 1), ("lg", 2), ("xl", 4), ("xxl", 8)
+$positions: ("t", "top"), ("r", "right"), ("b", "bottom"), ("l", "left")
+
+@function sizeValue($key, $value)
+  @return if($key == "none" or $key == "auto", $value, $value + $sizeUnit)
+
+@each $size in $sizes
+  $sizeKey: nth($size, 1)
+  $sizeValue: nth($size, 2)
+  .#{$marginKey}#{$separator}#{$sizeKey}
+    margin: sizeValue($sizeKey, $sizeValue) !important
+  @if ($sizeKey != "auto")
+    .#{$paddingKey}#{$separator}#{$sizeKey}
+      padding: sizeValue($sizeKey, $sizeValue) !important
+
+  @each $position in $positions
+    $posKey: nth($position, 1)
+    $posValue: nth($position, 2)
+    .#{$marginKey}#{$posKey}#{$separator}#{$sizeKey}
+      margin-#{$posValue}: sizeValue($sizeKey, $sizeValue) !important
+    @if ($sizeKey != "auto")
+      .#{$paddingKey}#{$posKey}#{$separator}#{$sizeKey}
+        padding-#{$posValue}: sizeValue($sizeKey, $sizeValue) !important
+
+// Alias for margin auto horizontaly and verticaly
+.mh-auto
+  @extend .ml-auto
+  @extend .mr-auto
+.mv-auto
+  @extend .mt-auto
+  @extend .mb-auto

@@ -1,0 +1,40 @@
+// bower:scss
+// endbower
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,7000');
+@import '_vars';
+@import 'bower_components/bulma/bulma';
+@import '_responsive';
+@import '_spacing';
+
+body{
+    max-width: 1680px;
+    margin: 0 auto;
+}
+.is-size-top-nav{
+    font-size: 0.85rem;
+}
+.top-nav{
+    box-shadow: 0 2px 10px $orange;
+    z-index: 2;
+    .navbar{
+        min-height: 2.5rem;
+        &.is-transparent {
+            background-color: transparent !important;
+        }
+        .navbar-item{
+            padding-right: 3.5rem;
+            &:last-child{
+                padding-right: 0;
+            }
+        }
+    }
+}
+
+.inner-nav{
+    padding: 2rem 0;
+    z-index: 1 !important;
+}
+
+.home-hero{
+    z-index: 1;
+}
