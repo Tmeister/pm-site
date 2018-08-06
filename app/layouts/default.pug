@@ -14,12 +14,15 @@ html.has-background-grey-lighter(lang='en')
 
     // build:css styles/main.css
     link(rel='stylesheet', href='styles/main.css')
+
     // endbuild
   body.has-background-white
     include ../includes/nav
     include ../includes/inner-nav
 
     block content
+
+    include ../includes/footer
 
     // Google Analytics: change UA-XXXXX-X to be your site's ID.
     script.
