@@ -59,3 +59,12 @@ body {
   background: url(../images/cta-bg@2x.png) no-repeat center center;
   background-size: cover;
 }
+
+.team{
+  .team-holder{
+    .team-image{
+      max-width: 130px;
+      height: auto;
+    }
+  }
+}

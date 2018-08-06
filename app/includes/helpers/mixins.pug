@@ -1,0 +1,7 @@
+mixin team-member(args)
+  .team-holder.has-text-centered.content
+    img.team-image(src=args.image, alt=args.name)
+    .team-bg
+      .team-data
+        h2.is-size-4.mt-md.mb-none.pt-none= args.name
+        h3.is-size-5.has-text-info.mt-sm.is-uppercase= args.position ? args.position : null
