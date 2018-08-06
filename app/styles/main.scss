@@ -6,7 +6,6 @@
 @import '_responsive';
 @import '_spacing';
 @import '_what-is-peermotion';
-
 body {
   max-width: 1440px;
   margin: 0 auto;
@@ -49,31 +48,51 @@ body {
   }
 }
 
-.separator{
+.separator {
   background: url(../images/separator@2x.png) no-repeat center center;
   background-size: cover;
   height: 185px;
 }
 
-.cta{
+.cta {
   background: url(../images/cta-bg@2x.png) no-repeat center center;
   background-size: cover;
 }
 
-.team{
-  .team-holder{
-    .team-image{
+.team {
+  .team-holder {
+    .team-image {
       max-width: 130px;
       height: auto;
     }
   }
 }
 
-.roadmap{
+.roadmap {
   background: url(../images/roadmap-bg@2x.png) no-repeat center center;
   background-size: 1440px;
 }
 
-.footer-logo{
+.footer-logo {
   max-width: 275px;
+}
+
+@media screen and (max-device-width: 768px) {
+  .is-reverse {
+    flex-direction: column-reverse;
+    display: flex;
+  }
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  footer {
+    .social {
+      text-align: center;
+      img {
+        max-width: 64px;
+        height: auto;
+        margin: 0 auto;
+      }
+    }
+  }
 }
