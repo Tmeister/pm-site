@@ -6,6 +6,7 @@
 @import '_responsive';
 @import '_spacing';
 @import '_what-is-peermotion';
+
 body {
   max-width: 1440px;
   margin: 0 auto;
@@ -31,6 +32,21 @@ body {
     }
   }
 }
+
+ .what-is-peermotion {
+   max-width: 720px;
+ }
+
+ .is-checked {
+   width: 16px;
+   height: 16px;
+ }
+
+ .is-what-holder{
+   background: url(../images/main-bg@2x.png) no-repeat center top;
+   background-size: 1440px;
+ }
+
 
 .inner-nav {
   padding: 2rem 0;
@@ -58,6 +74,16 @@ body {
   background: url(../images/cta-bg@2x.png) no-repeat center center;
   background-size: cover;
 }
+.cta-dual{
+  .button{
+    padding: 1.5em 2em;
+    line-height: 1em;
+
+    &.is-rounded{
+      border-radius: 20px;
+    }
+  }
+}
 
 .team {
   .team-holder {
@@ -75,6 +101,22 @@ body {
 
 .footer-logo {
   max-width: 275px;
+}
+
+.is-profitable {
+  background: url(../images/main-bg-reverse@2x.png) no-repeat center top;
+  //background-size: 1440px;
+}
+
+.is-performance {
+  background: url(../images/bg-brand@2x.png) no-repeat center top;
+  background-size: 1440px;
+}
+
+.small-icon {
+  img {
+    max-width: 50%;
+  }
 }
 
 @media screen and (max-device-width: 768px) {
