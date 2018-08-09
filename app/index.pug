@@ -1,5 +1,9 @@
+//- Home Page
 extends layouts/default
 include includes/helpers/mixins
+
+block vars
+  - var bodyClasses='has-background-white home-page'
 
 block content
     include includes/home-hero
@@ -11,4 +15,3 @@ block content
     include includes/cta
     include includes/team
     include includes/roadmap
-

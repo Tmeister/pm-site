@@ -16,7 +16,8 @@ html.has-background-grey-lighter(lang='en')
     link(rel='stylesheet', href='styles/main.css')
 
     // endbuild
-  body.has-background-white
+  block vars
+  body(class=bodyClasses)
     include ../includes/nav
     include ../includes/inner-nav
 

@@ -6,7 +6,6 @@
 @import '_responsive';
 @import '_spacing';
 @import '_what-is-peermotion';
-
 body {
   max-width: 1440px;
   margin: 0 auto;
@@ -19,6 +18,10 @@ body {
 .top-nav {
   box-shadow: 0 2px 10px rgba(0, 0, 0, .25);
   z-index: 2;
+  .navbar-brand,
+  .navbar-tabs {
+    min-height: 2.5rem;
+  }
   .navbar {
     min-height: 2.5rem;
     &.is-transparent {
@@ -26,6 +29,8 @@ body {
     }
     .navbar-item {
       padding-right: 3.5rem;
+      padding-top: 0px;
+      padding-bottom: 0px;
       &:last-child {
         padding-right: 0;
       }
@@ -33,23 +38,22 @@ body {
   }
 }
 
- .what-is-peermotion {
-   max-width: 720px;
- }
+.what-is-peermotion {
+  max-width: 720px;
+}
 
- .is-checked {
-   width: 16px;
-   height: 16px;
- }
+.is-checked {
+  width: 16px;
+  height: 16px;
+}
 
- .is-what-holder{
-   background: url(../images/main-bg@2x.png) no-repeat center top;
-   background-size: 1440px;
- }
-
+.is-what-holder {
+  background: url(../images/main-bg@2x.png) no-repeat center top;
+  background-size: 1440px;
+}
 
 .inner-nav {
-  padding: 2rem 0;
+  padding: 1rem 0;
   z-index: 1 !important;
 }
 
@@ -74,14 +78,21 @@ body {
   background: url(../images/cta-bg@2x.png) no-repeat center center;
   background-size: cover;
 }
-.cta-dual{
-  .button{
+
+.cta-dual,
+.cta-paco {
+  .button {
     padding: 1.5em 2em;
     line-height: 1em;
-
-    &.is-rounded{
+    &.is-rounded {
       border-radius: 20px;
     }
+  }
+}
+
+.cta-paco {
+  .button {
+    padding: 1em 2em;
   }
 }
 
@@ -104,8 +115,7 @@ body {
 }
 
 .is-profitable {
-  background: url(../images/main-bg-reverse@2x.png) no-repeat center top;
-  //background-size: 1440px;
+  background: url(../images/main-bg-reverse@2x.png) no-repeat center top; //background-size: 1440px;
 }
 
 .is-performance {
@@ -113,9 +123,35 @@ body {
   background-size: 1440px;
 }
 
+.is-crypto {
+  background: url(../images/main-bg-reverse@2x.png) no-repeat center top;
+  background-size: 1440px;
+}
+
+.is-paco-release {
+  background: url(../images/bg-gray@2x.png) no-repeat center top;
+  background-size: 1440px;
+}
+
+.is-crypto-title {
+  line-height: 2.75rem;
+}
+
 .small-icon {
   img {
     max-width: 50%;
+  }
+}
+
+.is-testimonial {
+  h2 {
+    line-height: 2.25rem;
+  }
+}
+
+.invertors-page {
+  footer {
+    margin-top: 0 !important;
   }
 }
 
