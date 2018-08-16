@@ -18,7 +18,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-
 $(document).ready(function () {
   $('.changewords').changeWords({
     time: 3000,
