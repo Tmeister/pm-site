@@ -170,6 +170,11 @@ body {
   }
 }
 
+.midle-title{
+  font-weight: normal !important;
+  line-height: 1.5em !important;
+}
+
 @media screen and (max-device-width: 768px) {
   .is-reverse {
     flex-direction: column-reverse;
